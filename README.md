@@ -1,1 +1,10 @@
-# Azure_TTS
+# Steps to run Azure TTS
+1)	CREATE A FREE AZURE ACCOUT at Azure portal
+2)	CREATE RESOURCE GROUP at  https://portal.azure.com/
+3)	CREATE A SPEECH SERVICE : Go to this page
+https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices
+4)	Do TTS
+a.	TO DO ONLINE SYNTHESIS
+b.	Do BATCH SYNTHESES
+More details please see the Steps_to_run_Azure_TTS.pdf file
+  	
