@@ -66,7 +66,7 @@ def read_input_file(file_path):
 
 #%%
 if __name__ == "__main__":
-    all_file=glob.glob('D:/shreya/TTS_LLM/Llama3_8b_finetune_syn/*.txt')
+    all_file=glob.glob('path_to_txts/*.txt')
 
     # Specify voices for each text
     voice_dict = {
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         
         fname=fil.split("\\")[-1].replace(".txt", "")
         
-        output_dir = "D:/shreya/TTS_LLM/Llama3_8b_emotional_tts/{}/".format(fname)
+        output_dir = "path_to_output_dir/{}/".format(fname)
         os.makedirs(output_dir, exist_ok=True)
             
         texts, voices, style =  read_input_file(fil)
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         batch_synthesis(texts, voices, styles)
   
  
-#%% ############################ CHECK FOR CURRUPTED WAV FILES 
+############################ CHECK FOR CORRUPTED WAV FILES 
 import librosa
 from collections import Counter
 
@@ -130,7 +130,7 @@ def check_wav_file(file_path):
         return False
 
 if __name__ == "__main__":
-    ggg=glob.glob('D:/shreya/TTS_LLM/selected_Llama3_8b_emotional_tts/*/*.wav')
+    ggg=glob.glob('path_to_wav/*/*.wav')
     ls=[]
     for i in ggg:
         i
@@ -140,4 +140,4 @@ if __name__ == "__main__":
             ls.append(ff)
             
     currupted_folders=list(Counter(ls).keys())
-    print("Currupted files:", len(currupted_folders))
+    print("Corrupted files:", len(currupted_folders))
