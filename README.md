@@ -5,6 +5,6 @@
 4)	Do TTS: Please see the Steps_to_run_Azure_TTS.pdf
 a.	DO ONLINE SYNTHESIS
 
-b.	Do BATCH SYNTHESES
+    b.	Do BATCH SYNTHESES
 
   	
