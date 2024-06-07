@@ -11,7 +11,7 @@ import os
 speech_config = speechsdk.SpeechConfig(subscription=os.environ.get('SPEECH_KEY'), region=os.environ.get('SPEECH_REGION'))
 
 # Define the output directory for synthesized audio files
-output_dir = "D:/shreya/TTS_LLM/output_audio/"
+output_dir = "./output_audio/"
 os.makedirs(output_dir, exist_ok=True)
 
 # Function to create SSML with specific voice and style
